@@ -25,8 +25,9 @@ const corsOptions = {
     //   console.log(origin);
     //   return "http://localhost:5173";
     // },
-    origin: "https://hostel-management-system-live-euvh.vercel.app",
+    origin: ["https://hostel-management-system-live-euvh.vercel.app"],
     // optionsSuccessStatus: 200,
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type"],
 };
@@ -62,7 +63,7 @@ app.use("/payment", PaymentRouter);
 /* Mongoose Setup */
 
 // const PORT = process.env.PORT || 5000;
-const PORT = process.env.PORT || 5000;
+const PORT = "https://hostel-management-system-live-euvh.vercel.app";
 mongoose
     .connect(process.env.mongodb)
     .then(() =>
