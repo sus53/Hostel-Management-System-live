@@ -73,3 +73,15 @@ mongoose
         })
     )
     .catch((err) => console.log(err));
+
+app.options("/payment/verify", (req, res) => {
+    res.setHeader("Access-Control-Allow-Origin", "https://hostel-management-system-live-euvh.vercel.app");
+    res.setHeader("Access-Control-Allow-Methods", "POST");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+    res.status(200).end();
+});
+
+/* Handle Redirects for Preflight Requests */
+app.get("/payment/verify", (req, res) => {
+    res.redirect(307, "https://hostel-management-system-live.vercel.app/payment/verify");
+});
