@@ -135,7 +135,7 @@ function ApproveHostel() {
                     <>
                       <div>Image 1</div>
                       <img
-                        src={`http://localhost:5000/assets/${hostel.imagepath1}`}
+                        src={`import.meta.env.VITE_BE_URL/${hostel.imagepath1}`}
                       />
                     </>
                   ) : (
@@ -145,7 +145,7 @@ function ApproveHostel() {
                     <>
                       <div>Image 2</div>
                       <img
-                        src={`http://localhost:5000/assets/${hostel.imagepath2}`}
+                        src={`import.meta.env.VITE_BE_URL/${hostel.imagepath2}`}
                       />
                     </>
                   ) : (
@@ -155,7 +155,7 @@ function ApproveHostel() {
                     <>
                       <div>Image 3</div>
                       <img
-                        src={`http://localhost:5000/assets/${hostel.imagepath3}`}
+                        src={`import.meta.env.VITE_BE_URL/${hostel.imagepath3}`}
                       />
                     </>
                   ) : (

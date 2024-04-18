@@ -145,25 +145,25 @@ export const HostelDetail = () => {
                     <div className="image-section">
                         <div>
                             <img
-                                src={`http://localhost:5000/assets/${hostel.imagepath1}`}
+                                src={`import.meta.env.VITE_BE_URL/${hostel.imagepath1}`}
                                 className="hostel-img full"
                                 onClick={() =>
                                     openImage(
-                                        `http://localhost:5000/assets/${hostel.imagepath1}`
+                                        `import.meta.env.VITE_BE_URL/${hostel.imagepath1}`
                                     )
                                 }
                             />
                         </div>
                         <div className="two-img">
                             <img
-                                src={`http://localhost:5000/assets/${hostel.imagepath2}`}
+                                src={`import.meta.env.VITE_BE_URL/${hostel.imagepath2}`}
                                 className="hostel-img"
-                                onClick={() => openImage(`http://localhost:5000/assets/${hostel.imagepath2}`)}
+                                onClick={() => openImage(`import.meta.env.VITE_BE_URL/${hostel.imagepath2}`)}
                             />
                             <img
-                                src={`http://localhost:5000/assets/${hostel.imagepath3}`}
+                                src={`import.meta.env.VITE_BE_URL/${hostel.imagepath3}`}
                                 className="hostel-img"
-                                onClick={() => openImage(`http://localhost:5000/assets/${hostel.imagepath3}`)}
+                                onClick={() => openImage(`import.meta.env.VITE_BE_URL/${hostel.imagepath3}`)}
                             />
                         </div>
                     </div>

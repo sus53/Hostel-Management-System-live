@@ -86,7 +86,7 @@ const UserProfile = () => {
               </div>
             </div>
             <div className="hostelBanner" >
-              <img src={`http://localhost:5000/assets/${hostel.imagepath1}`} alt="" />
+              <img src={`import.meta.env.VITE_BE_URL/${hostel.imagepath1}`} alt="" />
               <div className="hostelInfo">
                 <h1>{hostel.title}</h1>
                 <h4>Home Away From Home</h4>

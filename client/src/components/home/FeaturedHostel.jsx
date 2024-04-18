@@ -44,7 +44,7 @@ export const FeaturedHostel = () => {
             hostels.slice(0, 4).map((hostel, i) => (
               <div className="hostel" key={i} onClick={() => hostelHandler(hostel)}>
                 <img
-                  src={`http://localhost:5000/assets/${hostel.imagepath1}`}
+                  src={`import.meta.env.VITE_BE_URL/${hostel.imagepath1}`}
                   className="featured-img"
                 />
                 <div className="featured-text">

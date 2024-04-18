@@ -210,7 +210,7 @@ export const Hostel = () => {
                                     src={
                                         hostel.imagepath1 &&
                                             hostel.imagepath1 !== "undefined"
-                                            ? `http://localhost:5000/assets/${hostel.imagepath1}`
+                                            ? `import.meta.env.VITE_BE_URL/${hostel.imagepath1}`
                                             : HostelImg
                                     }
                                 />
