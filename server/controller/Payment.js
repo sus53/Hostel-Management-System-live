@@ -51,8 +51,8 @@ export const VerifyPayment = async (req, res) => {
             payment_method_types: ["card"],
             mode: "payment",
             line_items: lineItems,
-            success_url: `http://localhost:5173/hosteldetail/success`,
-            cancel_url: `http://localhost:5173/hosteldetail`,
+            success_url: `https://hostel-management-system-live-euvh.vercel.app/hosteldetail/success`,
+            cancel_url: `https://hostel-management-system-live-euvh.vercel.app/hosteldetail`,
         });
 
         res.status(200).json({ url: session.url });
