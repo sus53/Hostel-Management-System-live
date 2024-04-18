@@ -1,5 +1,5 @@
 import axios from "axios";
-const URL = `${import.meta.env.VITE_BE_URL}/payment`;
+const URL = `https://hostel-management-system-live.vercel.app//payment`;
 
 const header = {
   headers: {

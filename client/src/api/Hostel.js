@@ -1,7 +1,7 @@
 import axios from "axios";
 // const URL = "http://192.168.11.2:5000/hostel";
 
-const URL = `${import.meta.env.VITE_BE_URL}/hostel`;
+const URL = `https://hostel-management-system-live.vercel.app/hostel`;
 
 const header = {
     headers: {
