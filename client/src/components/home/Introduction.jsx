@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.scss";
+import "./Home.scss";
 import img2 from "../../assets/about/two.jpg";
 import { motion } from "framer-motion";
 
