@@ -25,7 +25,7 @@ const corsOptions = {
     //   console.log(origin);
     //   return "http://localhost:5173";
     // },
-    origin: "http://localhost:5173",
+    origin: "https://hostel-management-system-live-euvh.vercel.app",
     // optionsSuccessStatus: 200,
     credentials: true,
     allowedHeaders: ["Content-Type"],
