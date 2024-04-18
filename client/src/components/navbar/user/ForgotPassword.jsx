@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./User.scss";
 import { forgotPassword, LoginUser } from "../../../function/User";
 import { toast } from "react-toastify";
-import forgotPW from "../../../assets/img/forgetPW.jpg";
+import forgotPW from "../../../assets/img/ForgetPW.jpg";
 
 export const ForgotPassword = () => {
     const [email, setEmail] = useState("");
