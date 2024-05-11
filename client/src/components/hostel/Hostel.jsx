@@ -210,7 +210,7 @@ export const Hostel = () => {
                                     src={
                                         hostel.imagepath1 &&
                                             hostel.imagepath1 !== "undefined"
-                                            ? `import.meta.env.VITE_BE_URL/${hostel.imagepath1}`
+                                            ? `https://hostel-management-system-live.vercel.app/${hostel.imagepath1}`
                                             : HostelImg
                                     }
                                 />
