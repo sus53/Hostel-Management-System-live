@@ -27,7 +27,7 @@ const corsOptions = {
     // },
     origin: ["https://hostel-management-system-live-euvh.vercel.app"],
     // optionsSuccessStatus: 200,
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT","PATCH" ,"DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type"],
 };
